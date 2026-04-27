@@ -5,6 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>gimnazya 17</title>
     <style>
+        button:hover
+        {
+            background-color: brown;
+        }
+        .vvod:invalid
+        {
+            border-color: red;;
+        }
+        .vvod:valid
+        {
+            border-color: green;
+        }
+        .kyrsor
+        {
+            cursor: pointer;
+        }
         .bady
         {
             background-color: bisque;
@@ -63,10 +79,10 @@ background-color: bisque;
 </div>
 <nav>
 <div class="glav">
-    <button a="1">Главная</button>
-   <button><p> <a href="#1">ryjgrf</a></p></button>
-    <button><P><a href="#1">Программа</a></P></button>
-    <button a="#4">Адрес</button>
+    <button class="kyrsor" a="1">Главная</button>
+   <button class="kyrsor" ><p> <a href="#1">ryjgrf</a></p></button>
+    <button class="kyrsor"><P><a href="#1">Программа</a></P></button>
+    <button class="kyrsor" a="#4">Адрес</button>
 </div>
 </nav>
 </header>
@@ -75,7 +91,7 @@ background-color: bisque;
     <main>
         <h1 id="#1">О нас</h1>
         <h3>давным давно мы создали эту школу, теперь мы с уверенностью можем сказать:</h3><p>-<b>Мы самые лучшие,</b> у нас лучшие ученики, каждый ребенок хочет учиться у нас, 
-            каждый родитель хочет, <em>чтобы их дети учились у нас!</em> ура
+            каждый <q>родитель хочет,</q> <em>чтобы их дети учились у нас!</em> ура
         </p>
         <h3>требования к поступающим:</h3>
         <ol class="spisok">
@@ -123,24 +139,26 @@ background-color: bisque;
        <article><li>УСЛУГА 3- <b>КОНСУЛЬТАЦИЯ ДЛЯ РОДИТЛЕЙ</b></li>
         <p></p>
 <img src="images.png"></article>
+<a class="kyrsor" href="https://permaviat.ru/">ссылка</a>
 
     </ul>
     <section class="p-folio">
 <h3><a id="1">Контакты:</a></h3>
 <label>ФИО</label>
-<input type="text">
+<input  class="vvod" type="text" required>
 <label>mail</label>
-<input type="email">
+<input class="vvod" type="text" required>
 <label>Пароль</label>
-<input type="password">
+<input class="vvod" type="password" required>
 <label>дата обращения</label>
-<input type="date">
+<input class="vvod" type="date" required>
+<button class="kyrsor">Отправить</button>
 
     </section>
 </body>
 
 <footer>
-
+<p>@ все права защищены 2026</p>
 </footer>
 
 </html>
